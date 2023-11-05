@@ -1,0 +1,55 @@
+{% extends 'food/base.html'%}
+
+
+    
+
+    {%block body%}
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+        .profile-card {
+            background: linear-gradient(135deg, #3498db, #e74c3c);
+            color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .profile-info {
+            margin-top: 20px;
+        }
+        .img-fluid
+        {
+            width: 140px;
+  height: 143px;
+        }
+    </style>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="{{user.profile.image.url}}"class="img-fluid rounded-circle">
+                </div>
+                <div class="profile-info">
+                    <h3>{{user.username}}</h3>
+                    <p>{{user.first_name}} {{user.last_name}}</p>
+                    <p>{{user.email}}</p>
+                    <a href="{% url 'users:logout'%}">logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock%}

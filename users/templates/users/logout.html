@@ -1,0 +1,6 @@
+{% extends 'food/base.html'%}
+
+{%block body%}
+<h1>you are logged out {{form.username}}</h1>
+<a href="{% url 'food:index_page'%}">jump to main page</a>
+{%endblock%}

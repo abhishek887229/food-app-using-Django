@@ -1,0 +1,55 @@
+
+{%extends 'food/base.html'%}
+
+{% block body%}
+{% for i in val%}
+    <style>
+      .card-img-top {
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        width: 285px;
+        height: 227px;
+        transition: transform 0.3s;
+    }
+    
+    .card-img-top:hover {
+        transform: scale(1.1);
+        border-top-left-radius: 0.12rem;
+        border-top-right-radius: 0.12rem;
+    }
+
+    .btn-success {
+      background-color: #28a745; /* Green background color */
+      color: #fff; /* White text color */
+      padding: 10px 20px; /* Adjust padding as needed */
+      border: none; /* Remove border */
+      border-radius: 5px; /* Rounded corners */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: background-color 0.3s; /* Add a smooth transition effect */
+  }
+  
+  .btn-success:hover {
+      background-color: #9b59e6; /* Darker green on hover */
+  }
+  
+  
+    
+    </style>
+    <div class="card" style="width: 18rem; display: inline flow-root list-item; margin:20px; border:2px sloid;">
+        <img class="card-img-top" src="{{i.item_image}}" alt="Card image cap" width="18REM",HEIGHT="8REM">
+        <div class="card-body">
+            <a href="{% url 'food:detail_page' i.id i.item_name%}" style="display: block;">
+          <h4 class="card-title" style="text-align:right; color:black;" >{{i.item_name}}</h4>
+          </a>
+          <p class="card-text" style="text-align:right; color:black;">price: {{i.item_price}} $</p>
+        <a href="{% url 'food:detail_page' i.id i.item_name%}" class="btn btn-success mt-2">details</a>
+        </div>
+      </div>
+    {%endfor%}
+
+{%endblock%}
