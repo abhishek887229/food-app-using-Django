@@ -1,8 +1,7 @@
 
 # **fooday** a food app
 
-this is a food app named "fooday", this is a part of my Django learning path, this app is able to perform CRUD operation, you can add food item, update them, view and delete along with this, there is a fuctionality of user authentication and concept of signals too.
-
+This is a food app named 'Fooday.' This is part of my Django learning path. The app can perform CRUD operations, allowing users to add food items, update them, view, and delete. Additionally, there is functionality for user authentication and the concept of signals.
 
 ## Deployment
 
