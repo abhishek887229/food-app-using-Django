@@ -32,7 +32,6 @@ python3 manage.py runserver
 As i explain in intro this is a part of my practice, you can use this project and use it in your project, if you beginner you can practice from it take experice how things work. or you can customize it as you want.
 ## Screenshot
 
-Insert gif or link to demo
 * ![Screenshot from 2023-11-13 10-39-20](https://github.com/abhishek887229/food-app-using-Django/assets/125186953/0a745a85-ab68-4eb2-bdc3-73624bc223da)
 
 * ![Screenshot from 2023-11-13 10-39-26](https://github.com/abhishek887229/food-app-using-Django/assets/125186953/3998403a-c71d-410d-b2b1-80f5f9fa7105)
